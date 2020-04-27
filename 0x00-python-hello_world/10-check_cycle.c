@@ -4,19 +4,19 @@
  * @List: lista
  *
  * Return: 0 or 1
-*/
+ */
 
 int check_cycle(listint_t *list)
 {
-	 listint_t *tmpOne = list, *tmpTwo = list;
+	listint_t *tmpOne = list, *tmpTwo = list;
 
-	 while (tmpOne && tmpTwo && tmpTwo->next)
-	 {
-		 tmpOne = tmpOne->next;
-		 tmpTwo = tmpTwo->next->next;
+	while (tmpOne && tmpTwo && tmpTwo->next)
+	{
+		tmpOne = tmpOne->next;
+		tmpTwo = tmpTwo->next->next;
 
-		 if (tmpOne == tmpTwo)
-			 return (1);
-	 }
-	 return (0);
+		if (tmpOne == tmpTwo)
+			return (1);
+	}
+	return (0);
 }
