@@ -3,9 +3,9 @@
 
 def safe_print_list_integers(my_list=[], x=0):
     acum = 0
-    for i in my_list[:x]:
+    for i in range(0, x):
         try:
-            print('{:d}'.format(i), end='')
+            print('{:d}'.format(my_list[i]), end='')
             acum += 1
         except (ValueError, TypeError):
             pass
