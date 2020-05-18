@@ -6,6 +6,7 @@ def safe_print_integer_err(value):
         if isinstance(value, int):
             print('{:d}'.format(value))
             return True
-        return False
+        else:
+            return False
     except:
         print('Error')
