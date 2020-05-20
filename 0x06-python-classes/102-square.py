@@ -4,10 +4,9 @@
 
 class Square:
     """Class define a square"""
-
     def __init__(self, size=0):
         """init"""
-        self.__size = size
+        self.size = size
 
     @property
     def size(self):
@@ -26,28 +25,28 @@ class Square:
 
     def area(self):
         """Instance that return current square area"""
-        return self.__size ** 2
+        return self.size ** 2
 
-    def equal(self, ot):
+    def __eq__(self, other):
         """equal"""
-        return self.__size == ot.size
+        return self.size == other.size
 
-    def diferent(self, val):
+    def __ne__(self, other):
         """diferente"""
-        return self.__size != ot.size
+        return self.size != other.size
 
-    def may(self, val):
+    def __gt__(self, other):
         """mayor"""
-        return self.__size > ot.size
+        return self.size > other.size
 
-    def may_eq(self, val):
+    def __ge__(self, other):
         """mayor equal"""
-        return self.__size >= ot.size
+        return self.size >= other.size
 
-    def menor(self, val):
+    def __lt__(self, other):
         """menor"""
-        return self.__size < ot.size
+        return self.size < other.size
 
-    def menorEqual(self, val):
+    def __le__(self, other):
         """menor equal"""
-        return self.__size <= ot.size
+        return self.size <= other.size
