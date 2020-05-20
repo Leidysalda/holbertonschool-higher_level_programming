@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""My firts square"""
 
 
 class Square:

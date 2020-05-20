@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Single linked list"""
 
 
 class Node:
