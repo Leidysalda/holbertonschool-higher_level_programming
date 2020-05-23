@@ -9,9 +9,12 @@ def matrix_divided(matrix, div):
         for row in matrix:
             if div == 0:
                 raise ZeroDivisionError('division by zero')
+            elif type(div) not in (int, float):
+                raise TypeError('div must be a number')
             else:
                 new_matrix.append([round((n / div), 2) for n in row])
                 return new_matrix
+    
     for row in matrix:
         if type(matrix) not in (int, float):
             raise TypeError
@@ -19,6 +22,3 @@ def matrix_divided(matrix, div):
         elif len(matrix) > matrix[row]:
             raise TypeError
             ('Each row of the matrix must have the same size')
-        elif type(div) not in (int):
-            raise TypeError('div must be a number')
-    
