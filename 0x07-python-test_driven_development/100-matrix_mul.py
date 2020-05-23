@@ -20,6 +20,6 @@ def matrix_mul(m_a, m_b):
     m_c = [[0 for row in range(len(m_a))] for col in range(len(m_b[0]))]
     for i in range(len(m_a)):
         for j in range(len(m_b[0])):
-                       for k in range(len(m_b)):
-                           m_c[i][j] += m_a[i][k] * m_b[k][j]
+            for k in range(len(m_b)):
+                m_c[i][j] += m_a[i][k] * m_b[k][j]
     return(m_c)
