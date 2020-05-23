@@ -1,4 +1,7 @@
 #!/usr/bin/python
+"""
+Text indentation
+"""
 
 
 def text_indentation(text):
@@ -12,6 +15,7 @@ def text_indentation(text):
         for l in range(len(text)):
             if text[l] == '.' or text[l] == '?' or text[l] == ':':
                 print(text[l], end='\n')
+                print()
             elif text[l] == ' ' and (text[l - 1] == '.' or
                                      text[l - 1] == '?' or text[l - 1] == ':'):
                 continue
