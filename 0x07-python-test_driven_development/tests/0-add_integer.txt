@@ -55,6 +55,4 @@ Numbers
 	100
 
 	>>> function(float('inf'))
-	Traceback (mosot recent call last)
-	    ...
-	TypeError: a must be an integer
+	89
