@@ -25,7 +25,7 @@ Tex indentation
     ...
     TypeError: text_indentation() missing 1 required positional argument: 'text'
 
-    >>> text_indentation("""Holberton.School?How are you:John""")
+    >>> text_indentation('Holberton.School?How are you:John')
     Holberton.
     <BLANKLINE>
     School?
