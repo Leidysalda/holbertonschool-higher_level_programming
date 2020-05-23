@@ -63,3 +63,18 @@ Numbers
 	Traceback (most recent call last):
 	   ...
 	NameError: name 'NaNFloat' is not defined
+	
+	>>> function('1a')
+	Traceback (most recent call last):
+	    ...
+	TypeError: a must be an integer
+
+	>>> function(9, '2b')
+	Traceback (most recent call last):
+	    ...
+	TypeError: b must be an integer
+
+	>>> function (float('nan'))
+	Traceback (most recent call last):
+	    ...
+	ValueError: cannot convert float NaN to integer
