@@ -55,4 +55,6 @@ Numbers
 	100
 
 	>>> function(float('inf'))
-	89
+	Traceback (most recent call last):
+	    ...
+	OverflowError: cannot convert float infinity to integer
