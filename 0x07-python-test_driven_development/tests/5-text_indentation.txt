@@ -1,0 +1,16 @@
+============
+Test
+============
+
+
+Tex indentation
+
+
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+    >>> text_indentation('Hola! Cómo estas?')
+    Hola! Cómo estas?
+    <BLANKLINE>
+
+    >>> text_indentation('123456')
+    123456
