@@ -24,7 +24,11 @@ Numbers
 	>>> function(100.3, -2)
 	98
 
-	>>> function('a', 1)
+	>>> function(2, b=98)
+	100
+
+	
+	>> function('a', 1)
 	Traceback (most recent call last):
        	    ...
 	TypeError: a must be an integer
@@ -39,10 +43,18 @@ Numbers
     	    ...
 	TypeError: b must be an integer
 
-	>>> function(None,)
+	>>> function(None)
 	Traceback (most recent call last):
     	    ...
 	TypeError: a must be an integer
 
 	>>> function(3.22, 9.22)
 	12
+
+	>>> function(2.33)
+	100
+
+	>>> function(float('inf'))
+	Traceback (mosot recent call last)
+	    ...
+	TypeError: a must be an integer
