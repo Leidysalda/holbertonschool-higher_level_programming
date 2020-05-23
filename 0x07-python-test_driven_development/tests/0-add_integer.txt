@@ -58,3 +58,8 @@ Numbers
 	Traceback (most recent call last):
 	    ...
 	OverflowError: cannot convert float infinity to integer
+
+	>>> function(NaNFloat('NaN'))
+	Traceback (most recent call last):
+	   ...
+	NameError: name 'NaNFloat' is not defined
