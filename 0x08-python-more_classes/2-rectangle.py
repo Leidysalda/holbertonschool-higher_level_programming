@@ -28,8 +28,8 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self, value)
-    """private instance height""":
+    def height(self, value):
+        """private instance height"""
         if type(value) is not int:
             raise TypeError('height must be an integer')
         if value < 0:
