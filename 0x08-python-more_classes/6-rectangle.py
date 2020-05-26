@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """More classes and objects"""
 
+
 class Rectangle:
     """class rectangle """
     number_of_instances = 0

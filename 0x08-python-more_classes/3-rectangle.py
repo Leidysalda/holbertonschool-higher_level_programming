@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """More classes and objects"""
 
+
 class Rectangle:
     """Empty class """
     def __init__(self, width=0, height=0):

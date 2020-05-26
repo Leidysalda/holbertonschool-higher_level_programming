@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """More classes and objects"""
 
+
 class Rectangle:
     """Empty class """
     def __init__(self, width=0, height=0):
@@ -28,7 +29,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value)
-        """private instance height""":
+    """private instance height""":
         if type(value) is not int:
             raise TypeError('height must be an integer')
         if value < 0:
