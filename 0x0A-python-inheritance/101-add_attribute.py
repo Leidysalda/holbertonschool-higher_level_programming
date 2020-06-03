@@ -3,6 +3,7 @@
 
 
 def add_attribute(obj, name, value):
+    """ Method add """
     try:
         setattr(obj, name, value)
     except:
