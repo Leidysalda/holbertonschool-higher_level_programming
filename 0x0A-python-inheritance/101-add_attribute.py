@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Can I?"""
 
+
 def add_attribute(obj, name, value):
     """ Method add """
     try:
