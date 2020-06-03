@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""Square #1"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
