@@ -9,4 +9,4 @@ class MyList(list):
         Print list sorted
         """
         new_list = self[:]
-        return(sorted(new_list))
+        print(sorted(new_list))
