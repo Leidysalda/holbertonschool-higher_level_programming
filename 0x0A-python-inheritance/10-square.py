@@ -9,8 +9,8 @@ class Rectangle(BaseGeometry):
         """Constructor"""
         self.__width = width
         self.__height = height
-        super().integer_validator("width", width)
-        super().integer_validator("height", height)
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
 
     def area(self):
         """"Methodd area"""
@@ -26,11 +26,5 @@ class Square(Rectangle):
     def __init__(self, size):
         """Constructor"""
         self.__size = size
-
-    def area(self):
-        """area"""
-        return self.__size * self.__size
-
-    def __str__(self):
-        """str"""
-        return ('[Rectangle] {}/{}'.format(self.__size, self.__size))
+        self.integer_validator("size", size)
+        super().__init__(self.__size, self.__size)
