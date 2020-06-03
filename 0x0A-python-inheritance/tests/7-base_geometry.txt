@@ -9,4 +9,4 @@ Test
 	>>> BaseGeometry.integer_validator('abc', 'abc')
 	Traceback (most recent all last):
 	...
-	TypeError: abc must be a integer
+	TypeError: abc must be an integer
