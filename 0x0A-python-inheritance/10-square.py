@@ -28,3 +28,11 @@ class Square(Rectangle):
         self.__size = size
         self.integer_validator("size", size)
         super().__init__(self.__size, self.__size)
+
+    def are(self):
+        """area"""
+        return self.__size * self.__size
+
+    def __str__(self):
+        """string"""
+        return ('[Rectangle] {}/{}'.format(self.__size, self.__size))
