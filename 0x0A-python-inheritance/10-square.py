@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Square #1"""
 
 
 class BaseGeometry:

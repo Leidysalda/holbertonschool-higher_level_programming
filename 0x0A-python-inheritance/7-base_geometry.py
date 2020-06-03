@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Integer validator"""
 
 
 class BaseGeometry:
