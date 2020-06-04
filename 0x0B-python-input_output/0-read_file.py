@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Read  file"""
 
 
 def read_file(filename=""):
