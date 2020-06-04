@@ -5,7 +5,7 @@ import sys
 
 def pascal_triangle(n):
     """pascal"""
-    if n == 0:
+    if n <= 0:
         return []
     elif n == 1:
         return[[1]]
