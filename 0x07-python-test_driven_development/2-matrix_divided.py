@@ -14,7 +14,7 @@ def matrix_divided(matrix, div):
             else:
                 new_matrix.append([round((n / div), 2) for n in row])
                 return new_matrix
-    
+
     for row in matrix:
         if type(matrix) not in (int, float):
             raise TypeError
