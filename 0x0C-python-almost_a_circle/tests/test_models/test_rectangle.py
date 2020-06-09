@@ -4,6 +4,7 @@ Test rectangle
 """
 import unittest
 from models.base import Base
+from models.rectangle import Rectangle
 
 
 class test_Rectangle(unittest.TestCase):
@@ -15,5 +16,5 @@ class test_Rectangle(unittest.TestCase):
         """
         test create
         """
-        b1 = Base()
-        self.assertEqual(b1.id, 1)
+        r1 = Rectangle(10, 2)
+        self.assertEqual(r1.id, 1)

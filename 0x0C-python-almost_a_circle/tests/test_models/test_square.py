@@ -1,9 +1,13 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 """test square"""
 import unittest
-from models.rectangle import Rectangle
+from models.base import Base
+from models.square import Square
 
-class test_create_Square(unittest.TestCase):
+
+class test_square(unittest.TestCase):
     """test square"""
-    b1 = Rectangle()
-    self.asserEqual(b1.id, 1)
+    def test_square(self):
+        """test_1"""
+        s1 = Square(5)
+        self.assertEqual(s1.id, 1)
