@@ -46,15 +46,12 @@ class Base:
             return list
         return('[]')
 
-    #def create(cls, **dictionary):
-
-
     def draw(list_rectangles, list_squares):
         """opens a window and draws all the Rectangles and Squares"""
         bob = turtle.Turtle
 
         bob.pos(0)
-        #bob.left(list_squares)
-        #bob.forward(100)
+        bob.left(list_squares)
+        bob.forward(100)
 
         turtle.done()
