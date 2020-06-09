@@ -1,11 +1,15 @@
 #!/usr/bin/python3
-"""Base class"""
+"""
+Base class
+"""
 import json
 import turtle
 
 
 class Base:
-    """First class"""
+    """
+    First class
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -20,7 +24,9 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """ sharing data representation"""
+        """
+        sharing data representation
+        """
         if list_dictionaries:
             dict = json.dumps(list_dictionaries)
             return(dict)
@@ -28,7 +34,9 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """writes the JSON string representation of list_objs to a file"""
+        """
+        writes the JSON string representation of list_objs to a file
+        """
         new = []
         open_name = cls.__name__ + '.json'
         if list_objs is not None:
@@ -50,7 +58,9 @@ class Base:
             return('[]')
 
     def draw(list_rectangles, list_squares):
-        """opens a window and draws all the Rectangles and Squares"""
+        """
+        opens a window and draws all the Rectangles and Squares
+        """
         bob = turtle.Turtle
 
         bob.pos(0)
