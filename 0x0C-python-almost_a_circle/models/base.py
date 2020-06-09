@@ -51,7 +51,10 @@ class Base:
         """
         returns the list of the JSON string representation json_string
         """
-        if json_string is not None:
+        if json_string:
+            list = json.loads(json_string)
+            return list
+        elif json_sring is not None:
             list = json.loads(json_string)
             return list
         else:
