@@ -1,30 +1,42 @@
 #!/usr/bin/python3
-"""The square"""
+"""
+The square
+"""
 from models.rectangle import Rectangle
 from models.base import Base
 
 
 class Square(Rectangle):
-    """class Square"""
+    """
+    class Square
+    """
 
     def __init__(self, size, x=0, y=0, id=None):
-        """constructor"""
+        """
+        constructor
+        """
         super().__init__(size, size, x, y, id)
         self.__width = size
 
     def __str__(self):
-        """str"""
+        """
+        str
+        """
         return('[Square] ({}) {}/{} - {}'
                .format(self.id, self.x, self.y, self.__width))
 
     @property
     def size(self):
-        """private instance size"""
+        """
+        private instance size
+        """
         return self.__width
 
     @size.setter
     def size(self, value):
-        """private instance"""
+        """
+        private instance
+        """
         if type(value) is not int:
             raise TypeError('width must be an integer')
         if value <= 0:
@@ -34,7 +46,9 @@ class Square(Rectangle):
             self.__height = value
 
     def update(self, *args, **kwargs):
-        """assigns attributes"""
+        """
+        assigns attributes
+        """
         if len(args) >= 1:
             self.id = args[0]
         if len(args) >= 2:
@@ -56,6 +70,7 @@ class Square(Rectangle):
                     self.y = value
 
     def to_dictionary(self):
+        """dictionary"""
         dict = {
             'id': self.id,
             'size': self.__width,
