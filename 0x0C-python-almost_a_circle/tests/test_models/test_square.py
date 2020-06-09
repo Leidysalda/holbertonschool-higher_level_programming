@@ -10,4 +10,4 @@ class test_square(unittest.TestCase):
     def test_square(self):
         """test_1"""
         s1 = Square(5)
-        self.assertEqual(s1.id, 1)
+        self.assertEqual(s1.id, 3)

@@ -17,8 +17,4 @@ class test_Rectangle(unittest.TestCase):
         test create
         """
         r1 = Rectangle(10, 2)
-        self.assertEqual(r1.id, 1)
-        r1 = Rectangle(5, 1)
         self.assertEqual(r1.id, 2)
-        r1 = Rectangle(3, 8)
-        self.assertEqual(r1.id, 3)
