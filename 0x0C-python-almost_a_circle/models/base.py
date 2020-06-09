@@ -46,7 +46,8 @@ class Base:
         if json_string is not None:
             list = json.loads(json_string)
             return list
-        return('[]')
+        else:
+            return('[]')
 
     def draw(list_rectangles, list_squares):
         """opens a window and draws all the Rectangles and Squares"""
