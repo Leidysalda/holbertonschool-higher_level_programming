@@ -13,11 +13,11 @@ if __name__ == '__main__':
                          db=sys.argv[3], charset="utf8")
 
     cur = db.cursor()
-    quer = "SELECT * FROM states\
-    WHERE name LIKE 'N%' ORDER BY states.id ASC"
-    cur.execute(quer)
+    cur.execute("SELECT * FROM states\
+    WHERE name LIKE BINARY 'N%'")
     rows = cur.fetchall()
     for row in rows:
         print(row)
+
     cur.close()
     db.close()
