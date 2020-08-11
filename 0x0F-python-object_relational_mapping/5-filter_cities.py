@@ -15,7 +15,8 @@ if __name__ == '__main__':
     cur = db.cursor()
     state = sys.argv[4]
     cur.execute("SELECT cities.name FROM cities JOIN states\
-    ON cities.state_id = states.id WHERE states.name = %(state)s", {'state' : state})
+    ON cities.state_id = states.id WHERE states.name = %(state)s",
+                {'state':state})
 
     rows = cur.fetchall()
 
@@ -24,6 +25,5 @@ if __name__ == '__main__':
         if i != len(rows) - 1:
             print(", ", end="")
     print("")
-    
     cur.close()
     db.close()
