@@ -13,6 +13,6 @@ def fetch():
         print('    - content: {}'.format(ret))
         print('    - utf8 content: {}'.format(uft))
 
-        
+
 if __name__ == '__main__':
     fetch()
