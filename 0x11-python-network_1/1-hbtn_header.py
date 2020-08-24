@@ -10,7 +10,7 @@ import sys
 def status():
     """URL"""
     head = {'X-Request-Id'}
-    with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
+    with urllib.request.urlopen(sys.argv[1]) as response:
         print(response.info()['X-Request-Id'])
 
 
