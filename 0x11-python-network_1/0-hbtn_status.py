@@ -9,9 +9,9 @@ def fetch():
         ret = response.read()
         uft = ret.decode('utf-8')
         print('Body response:')
-        print('    - type: {}'.format(type(ret)))
-        print('    - content: {}'.format(ret))
-        print('    - utf8 content: {}'.format(uft))
+        print('\t- type: {}'.format(type(ret)))
+        print('\t- content: {}'.format(ret))
+        print('\t- utf8 content: {}'.format(uft))
 
 
 if __name__ == '__main__':
