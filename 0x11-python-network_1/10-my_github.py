@@ -6,13 +6,11 @@ import requests
 import sys
 
 
-def status():
-    """URL"""
-    
-    res = requests.get('https://api.github.com/user', auth=(username, passwd))
-    datajson = response.json()
+if __name__ == '__main__':
+
+    res = requests.get('https://api.github.com/user', auth=(sys.argv[1], sys.argv[2]))
+    datajson = res.json()
     print(datajson.get('id'))
 
-
-if __name__ == '__main__':
-    status()
+else:
+    print("None")
