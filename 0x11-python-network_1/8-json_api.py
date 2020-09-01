@@ -22,7 +22,8 @@ def status():
             print('[{}] '.format(res.json()['id']), end='')
             print(res.json()['name'])
     except:
-        print('Not a valid  JSON')
+        print('Not a valid JSON')
+
 
 if __name__ == '__main__':
     status()
