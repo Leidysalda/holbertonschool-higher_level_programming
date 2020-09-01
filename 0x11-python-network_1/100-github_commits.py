@@ -10,12 +10,12 @@ if __name__ == '__main__':
 
     try:
         url = "https://api.github.com/user"
-        u = sys.argv[1]
-        t = sys.argv[2]
 
-        res = requests.get(url, auth=(u, t))
+        res = requests.get(url, auth=(sys.argv[1], sys.argv[2]))
 
-        print(res.json().get['id'])
+        res_json = res.json()
+
+        print(res_json.get['id'])
 
     except KeyError:
         print('None')
