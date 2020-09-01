@@ -15,6 +15,6 @@ if __name__ == '__main__':
     res = requests.get(url, auth=(u, t))
 
     try:
-        print(res.json()['id'])
+        print(res.json().get['id'])
     except KeyError:
         print('None')
