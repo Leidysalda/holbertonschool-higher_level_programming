@@ -8,10 +8,11 @@ import sys
 
 if __name__ == '__main__':
 
-    url = "https://api.github.com/repos/{}/{}/commits"
-    .format(sys.argv[1], sys.argv[2])
+    url = "https://api.github.com/user"
+    u = sys.argv[1]
+    t = sys.argv[2]
 
-    res = requests.get(url)
+    res = requests.get(url, auth=(u, t))
 
     try:
         print(res.json()['id'])
