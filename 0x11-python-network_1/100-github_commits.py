@@ -15,7 +15,7 @@ if __name__ == '__main__':
         res_json = res.json()
 
     try:
-        print(res_json.get('id'))
+        print(res_json.response.get['id'])
 
     except KeyError:
         print('None')
