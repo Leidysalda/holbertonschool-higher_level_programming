@@ -1,0 +1,10 @@
+#!/usr/bin/node
+// script that prints the first argument passed to it.
+
+if (process.argv.length === 2) {
+  console.log('No argument');
+} else {
+  process.argv.forEach((val, index) => {
+    console.log(val);
+  });
+}
