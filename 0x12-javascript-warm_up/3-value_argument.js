@@ -4,7 +4,5 @@
 if (process.argv.length === 2) {
   console.log('No argument');
 } else {
-  process.argv.forEach((val, index) => {
-    console.log(val);
-  });
+  console.log(process.argv[2]);
 }
