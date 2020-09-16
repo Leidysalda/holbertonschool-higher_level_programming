@@ -3,7 +3,7 @@
     if the first argument can be converted to an integer.
 */
 
-const lang = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+let lang = ['C is fun', 'Python is cool', 'Javascript is amazing'];
 
 for (var i = 0; i < lang.length; i++) {
   console.log(lang[i]);
