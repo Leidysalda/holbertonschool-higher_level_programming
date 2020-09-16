@@ -4,8 +4,7 @@
 */
 
 const lang = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-lang.forEach(funcArr);
 
-function funcArr (item) {
-  console.log(item);
+for (var i = 0; i < lang.length; i++) {
+  console.log(lang[i]);
 }
